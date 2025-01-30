@@ -1,0 +1,4 @@
+repository "chess_logic@CSCI388@cloud"
+  path "/"
+    br "/main"
+    co "/main"

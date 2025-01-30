@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7851751675060802279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3076189268020633923}
+  - component: {fileID: 1309013047337054246}
+  - component: {fileID: 8138615876051676256}
+  - component: {fileID: 1866040691459334213}
+  - component: {fileID: 2857593982130521903}
+  - component: {fileID: 2085040662653034303}
+  - component: {fileID: 5833365726303960638}
+  - component: {fileID: 6431287334079190676}
+  m_Layer: 0
+  m_Name: Chessboard
+  m_TagString: 2Handed
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3076189268020633923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1309013047337054246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e2f3fde540ab543be74fc1d8885250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promotionInitial: 
+  tileMaterials:
+  - {fileID: 2100000, guid: 9f5a5b52140c06f4580d01e612ed8ed5, type: 2}
+  - {fileID: 2100000, guid: 5e87c26d60b99e341b406ddfa9b40164, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 4719a73edecb601448508ddb88da7dac, type: 2}
+  moveMaterial: {fileID: 2100000, guid: 882f25855112c134995b6b9acbf6da4a, type: 2}
+  ghostMaterialBlue: {fileID: 2100000, guid: da3f777fb73201c4b98170360b1123f2, type: 2}
+  ghostMaterialRed: {fileID: 2100000, guid: 3ae532a7b0a08d549afe24d26d1bd28f, type: 2}
+  prefabs:
+  - {fileID: 376973215874245323, guid: d44775d9af7e6d545bf479ecd0c2c1fa, type: 3}
+  - {fileID: 7014002078736255856, guid: 719ded2461388f94492d088ac58349ff, type: 3}
+  - {fileID: 8253206365248376019, guid: ab10ce83682188c47af5abb8d4d37106, type: 3}
+  - {fileID: 8410645269102782422, guid: 4f533eca2408e36498c4691af9ee6180, type: 3}
+  - {fileID: 9003136507548948662, guid: 7373c557afd5e5c4586cb25136dccfc3, type: 3}
+  - {fileID: 6797034267355161123, guid: 8a3e4400a0029e3458a8be4a6575d7f7, type: 3}
+  teamMaterials:
+  - {fileID: 2100000, guid: 2d7bce7563eeeb34fa43e1637c4594e9, type: 2}
+  - {fileID: 2100000, guid: ba0e00704f8711f45bf43903f3815af0, type: 2}
+  border: {fileID: 0}
+  px: -1
+  py: -1
+  cam: {fileID: 0}
+  currentTeam: 0
+  chessPieceCreated: 0
+  winScreen: {fileID: 0}
+  blackPromoUi: {fileID: 0}
+  whitePromoUi: {fileID: 0}
+  auxObj: {fileID: 0}
+--- !u!65 &8138615876051676256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0283992, y: 0.07295883, z: 2.0262403}
+  m_Center: {x: 0.0006955862, y: -0.020617828, z: -0.0056090355}
+--- !u!114 &1866040691459334213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &2857593982130521903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 3076189268020633923}
+  manipulationType: -1
+  twoHandedManipulationType: -1
+  allowFarManipulation: 0
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 1866040691459334213}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2085040662653034303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
+--- !u!114 &5833365726303960638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: 3
+  executionOrder: 0
+  constraintOnRotation: 5
+  useLocalSpaceForConstraint: 0
+--- !u!114 &6431287334079190676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851751675060802279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e924cd55d76ad4297c23cfc73be48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manipulationType: 2

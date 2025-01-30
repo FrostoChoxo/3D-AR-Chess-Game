@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a97ff32835b4fd84cb264386cbbfd0e4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - FracturedPiece: {instanceID: 0}
+  - fracturedWhite: {fileID: 2100000, guid: 345eb299c2c8fa04a88a0916a5f7361f, type: 2}
+  - fracturedBlack: {fileID: 2100000, guid: 9ace98a68856132438c132720d258aeb, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
