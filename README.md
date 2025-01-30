@@ -1,7 +1,7 @@
 # 3D AR Chess Game for HoloLens 2
 
 This project is a **3D chess game** designed for **Augmented Reality (AR)** on the **HoloLens 2**. It offers an immersive chess experience in AR with two game modes: **AI** and **Multiplayer**, both linked to the **Lichess API** to fetch and update moves in real-time.
-
+[![Watch the video](https://img.youtube.com/vi/4Fq6fquZlXk/0.jpg)](https://www.youtube.com/watch?v=4Fq6fquZlXk)
 The goal of this project is to provide a 3D chess game with **no platform limitations**, allowing players to experience chess in a fully interactive AR environment, whether they’re playing against an AI or competing with other players online.
 
 ## Features
