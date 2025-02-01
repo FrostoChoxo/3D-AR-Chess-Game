@@ -45,3 +45,11 @@ The goal of this project is to provide a 3D chess game with **no platform limita
 4. **Build for HoloLens 2**:
   Configure your project for HoloLens 2 deployment in Unity.
   Build and deploy the application to your HoloLens 2.
+
+## Contributers
+
+- Harsh Goreja
+
+- Mohammed Riaz
+
+- Shriram Gounder
